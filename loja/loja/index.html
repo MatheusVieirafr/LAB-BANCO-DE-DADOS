@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Principal LOJA BD</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-NHW11ZFc83wzTCy1d9TnkMhtj41pcASwBtKDXh+UdG4ETMlMzfHm6Qb6KQ9s6w1O5TJRN5C2bADl0HT87AaknQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #888888;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-section {
+            width: 300px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden; 
+        }
+
+        .menu-section h2 {
+            background-color: #999999;
+            color: #fff;
+            margin: 0;
+            padding: 10px 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .menu-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-section li {
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-section li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-section li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-section li a:hover {
+            background-color: #ddd;
+            transform: translateY(-2px);
+        }
+
+        .menu-section .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Menu Principal LOJA BD</h1>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2><i class="fas fa-search icon"></i> Consultas</h2>
+            <ul>
+                <li><a href="consulta_clientes.php"><i class="fas fa-users"></i> Clientes</a></li>
+                <li><a href="consulta_vendedor.php"><i class="fas fa-user-tie"></i> Vendedor</a></li>
+                <li><a href="consulta_produto.php"><i class="fas fa-box"></i> Produtos</a></li>
+                <li><a href="consulta_pedido.php"><i class="fas fa-shopping-cart"></i> Pedido</a></li>
+                <li><a href="consulta_itens_pedido.php"><i class="fas fa-shopping-cart"></i> Itens do Pedido</a></li>
+                <li><a href="consulta_forma_pagto.php"><i class="far fa-credit-card"></i> Formas de Pagamento</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h2><i class="fas fa-plus icon"></i> Inclusões</h2>
+            <ul>
+                <li><a href="incluir_clientes.php"><i class="fas fa-user-plus"></i> Clientes</a></li>
+                <li><a href="incluir_pedido.php"><i class="fas fa-cart-plus"></i> Pedidos</a></li>
+                <li><a href="incluir_produto.php"><i class="fas fa-plus-square"></i> Produto</a></li>
+                <li><a href="incluir_vendedor.php"><i class="fas fa-user-plus"></i> Vendedor</a></li>
+                <li><a href="incluir_forma_pagto.php"><i class="far fa-credit-card"></i> Forma de Pagamento</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h2><i class="fas fa-file-alt icon"></i> Relatórios</h2>
+            <ul>
+                <li><a href="relatorio_comissao.php"><i class="fas fa-hand-holding-usd"></i> Comissão</a></li>
+                <li><a href="relatorio_pedidos.php"><i class="fas fa-file-alt"></i> Pedidos</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
